@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -10,6 +10,12 @@ const socials = [
     href: "mailto:marco.nucara@evolve-productive.com",
     label: "Email",
     handle: "marco.nucara@evolve-productive.com",
+  },
+  {
+    icon: <Linkedin size={20} />,
+    href: "https://www.linkedin.com/in/marco-nucara",
+    label: "Linkedin",
+    handle: "Marco Nucara",
   },
   {
     icon: <Github size={20} />,
