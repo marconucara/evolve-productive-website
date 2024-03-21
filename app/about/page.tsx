@@ -2,6 +2,7 @@
 import { UserCircle, Mail, MonitorCheck, Rocket } from "lucide-react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
+import Link from "next/link";
 
 const socials = [
   {
@@ -25,7 +26,7 @@ export default function Example() {
   return (
     <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
-      <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+      <div className="container flex flex-wrap items-center justify-center min-h-screen w-screen px-4 pt-24 mx-auto">
         <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 xl:grid-cols-3 lg:gap-16">
           {socials.map((s) => (
             <Card>
@@ -48,6 +49,14 @@ export default function Example() {
               </div>
             </Card>
           ))}
+        </div>
+        <div className="my-8 text-center animate-fade-in ">
+          <Link
+            href="/contact"
+            className="text-sm text-zinc-300 lg:text-xl text-center"
+          >
+            Contact me now
+          </Link>
         </div>
       </div>
     </div>
