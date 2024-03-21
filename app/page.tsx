@@ -2,7 +2,10 @@ import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
 
-const navigation = [{ name: "Contact", href: "/contact" }];
+const navigation = [
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
+];
 
 export default function Home() {
   return (
@@ -13,7 +16,7 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-300 hover:text-zinc-400"
+              className="text-sm lg:text-lg duration-500 text-zinc-300 hover:text-zinc-400"
             >
               {item.name}
             </Link>

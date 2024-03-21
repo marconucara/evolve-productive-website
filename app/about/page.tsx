@@ -1,27 +1,23 @@
 "use client";
-import { Github, Linkedin, Mail } from "lucide-react";
-import Link from "next/link";
+import { UserCircle, Mail, MonitorCheck, Rocket } from "lucide-react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
   {
-    icon: <Mail size={20} />,
-    href: "mailto:marco.nucara@evolve-productive.com",
-    label: "Email",
-    handle: "marco.nucara@evolve-productive.com",
+    icon: <UserCircle size={20} />,
+    label: "Meet Marco",
+    text: "Evolve Productive is a one-person consultancy run by me, Marco Nucara. I'll be your dedicated consultant or developer, leveraging 15 years of experience leading and managing engineering teams.",
   },
   {
-    icon: <Linkedin size={20} />,
-    href: "https://www.linkedin.com/in/marco-nucara",
-    label: "Linkedin",
-    handle: "Marco Nucara",
+    icon: <Rocket size={20} />,
+    label: "Boost Team Performance",
+    text: "I'll help you implement best practices, guide team members' leadership growth, and unlock a high-performing engineering team.",
   },
   {
-    icon: <Github size={20} />,
-    href: "https://github.com/marconucara",
-    label: "Github",
-    handle: "marconucara",
+    icon: <MonitorCheck size={20} />,
+    label: "Expert Development",
+    text: "Need a hand with smaller projects? I can provide development support using modern frameworks, specializing in TypeScript, React, GraphQL and Design Systems.",
   },
 ];
 
@@ -33,11 +29,7 @@ export default function Example() {
         <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 xl:grid-cols-3 lg:gap-16">
           {socials.map((s) => (
             <Card>
-              <Link
-                href={s.href}
-                target="_blank"
-                className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24 md:p-16"
-              >
+              <div className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24 md:p-16">
                 <span
                   className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
                   aria-hidden="true"
@@ -47,13 +39,13 @@ export default function Example() {
                 </span>{" "}
                 <div className="z-10 flex flex-col items-center">
                   <span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white text-center font-display">
-                    {s.handle}
-                  </span>
-                  <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
                     {s.label}
                   </span>
+                  <p className="mt-4 text-sm duration-1000 text-zinc-300">
+                    {s.text}
+                  </p>
                 </div>
-              </Link>
+              </div>
             </Card>
           ))}
         </div>
