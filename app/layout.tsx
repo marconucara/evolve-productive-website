@@ -6,17 +6,17 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "evolve-productive.com",
-    template: "%s | evolve-productive.com",
+    default: "Evolve Productive",
+    template: "%s | Evolve Productive",
   },
   description:
     "Building Stronger Teams, Driving Innovation Through Optimized Engineering Management",
   openGraph: {
-    title: "evolve-productive.com",
+    title: "Evolve Productive",
     description:
       "Building Stronger Teams, Driving Innovation Through Optimized Engineering Management",
     url: "https://evolve-productive.com",
-    siteName: "evolve-productive.com",
+    siteName: "Evolve Productive",
     images: [
       {
         url: "https://evolve-productive.com/og.png",
