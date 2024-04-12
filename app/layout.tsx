@@ -9,10 +9,12 @@ export const metadata: Metadata = {
     default: "evolve-productive.com",
     template: "%s | evolve-productive.com",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description:
+    "Building Stronger Teams, Driving Innovation Through Optimized Engineering Management",
   openGraph: {
     title: "evolve-productive.com",
-    description: "Co-founder of unkey.dev and founder of planetfall.io",
+    description:
+      "Building Stronger Teams, Driving Innovation Through Optimized Engineering Management",
     url: "https://evolve-productive.com",
     siteName: "evolve-productive.com",
     images: [
